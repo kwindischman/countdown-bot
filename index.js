@@ -6,6 +6,7 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
 })
 
+//Test Commit
 client.on('message', message => {
     if (message.content === 'ping') {
         message.reply('pong');
