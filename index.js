@@ -3,11 +3,13 @@ const { prefix, token } = require('./config.json');
 const client = new Discord.Client();
 
 client.once('ready', () => {
-    console.log('ready!')
+    console.log(`Logged in as ${client.user.tag}!`)
 })
 
 client.on('message', message => {
-    console.log(message.content);
+    if (message.content === 'ping') {
+        message.reply('pong');
+    }
 })
 
 client.login(token);
