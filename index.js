@@ -27,7 +27,7 @@ client.once('ready', () => {
  * @return : null
  */
 client.on('message', message => {
-    if (!message.content.startswith("!!")) {
+    if (!message.content.startsWith("!!")) {
         return
     }
 
